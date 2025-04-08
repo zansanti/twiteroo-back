@@ -35,7 +35,6 @@ export async function getTweets(req, res) {
       const tweets = await db.collection('tweets')
         .find()
         .sort({ createdAt: -1 })  // -1 = decrescente
-        .limit(10)
         .toArray();
   
       // 2. Para cada tweet, busca o avatar do usuário
