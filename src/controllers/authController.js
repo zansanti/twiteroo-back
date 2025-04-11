@@ -1,4 +1,4 @@
-import { userSchema } from '../models/User.js'; // Criaremos esse arquivo depois
+import { userSchema } from '../models/user.js'; // Criaremos esse arquivo depois
 import connectToDatabase from '../database/db.js';
 
 export async function signUp(req, res) {
